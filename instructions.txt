@@ -1,0 +1,11 @@
+npm run build 
+export NODE_OPTIONS=--openssl-legacy-provider
+cd build
+git init
+git add .
+git commit -m <msg>
+git remote add origin https://<token>@github.com/pranavman11/pranavman11.github.io.git
+git push -u origin main         
+git pull origin main --allow-unrelated-histories     
+git push -u origin main  
+DONE
